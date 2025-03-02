@@ -1,0 +1,5 @@
+https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset
+
+
+X_columns=['age', 'hypertension', 'heart_disease', 'ever_married',
+       'work_type', 'avg_glucose_level', 'bmi','smoking_status']

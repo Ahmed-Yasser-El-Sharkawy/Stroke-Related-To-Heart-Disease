@@ -1,0 +1,3 @@
+https://www.kaggle.com/datasets/abhishek14398/heart-disease-classification/data
+
+X_columns=['age', 'sex', 'chest_pain_type', 'resting_bp', 'restecg', 'max_hr', 'exang', 'oldpeak', 'slope', 'thal']
