@@ -1,4 +1,4 @@
-"# Stroke-Related-To-Heart-Disease" 
+## Stroke-Related-To-Heart-Disease
 # Models Architecture
 ![image](https://github.com/user-attachments/assets/2c803ca3-72fe-40a9-9126-30890a3dacad)
 
