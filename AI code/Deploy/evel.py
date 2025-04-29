@@ -71,3 +71,4 @@ class PersonData:
         stroke_data = StrokeData(self.features[0], self.features[10], self.heart_prediction, self.features[11], self.features[12],
                                  self.features[13], self.features[14], self.features[15])
         return self.predictor.predict_stroke(stroke_data.features)
+    
