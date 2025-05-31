@@ -146,7 +146,8 @@ def predict():
 
         return jsonify({
             'heart_prediction': int(person_data.heart_prediction),
-            'stroke_prediction': int(person_data.stroke_prediction)
+            'stroke_prediction': int(person_data.stroke_prediction),
+            'stroke_probability': round(float(person_data.stroke_proba[person_data.stroke_prediction]), 4)           
         })
 
     except Exception as e:

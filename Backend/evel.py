@@ -50,7 +50,15 @@ class HealthPredictor:
         data_point[7] = self.smoking_status_encoder.transform([data_point[7]])[0]
 
         data_point_scaled = self.stroke_scaler.transform(np.array([data_point]))
-        return self.stroke_model.predict(data_point_scaled)[0]
+        
+        # Get prediction probability
+        probabilities = self.stroke_model.predict_proba(data_point_scaled)[0]
+
+        # You can return both prediction and probabilities if needed
+        prediction = np.argmax(probabilities)
+        return prediction, probabilities
+        
+        # return self.stroke_model.predict(data_point_scaled)[0]
 
 
 class PersonData:
@@ -60,7 +68,7 @@ class PersonData:
                 hypertension, ever_married, work_type, avg_glucose_level, bmi, smoking_status]
         self.predictor = HealthPredictor()
         self.heart_prediction = self.predict_heart()
-        self.stroke_prediction = self.predict_stroke()
+        self.stroke_prediction, self.stroke_proba = self.predict_stroke()
 
     def predict_heart(self):
         heart_data = HeartData(*self.features[:10])
