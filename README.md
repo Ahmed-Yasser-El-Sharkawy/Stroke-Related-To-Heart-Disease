@@ -309,7 +309,7 @@ These considerations are critical when evaluating model outputs for clinical dec
 
 ## 👨‍💻 Contributors
 
-| Name                                                                    | Role                                                             | GitHub                        |
+| Name                                                                    | GitHub                                                           | Role in this project          |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------- |
 | ![AhmedAmr](https://avatars.githubusercontent.com/u/162978338?s=64)     | [Ahmed Amr](https://github.com/Ahmedamr778)                      | **Mobile Developer**          |
 | ![AhmedAli](https://avatars.githubusercontent.com/u/159345376?s=64)     | [Ahmed Ali Abd-Elshafy](https://github.com/Ahmed209Ali)          | **Embedded Systems Engineer** |
