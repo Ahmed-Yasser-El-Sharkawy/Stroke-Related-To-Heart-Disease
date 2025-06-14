@@ -1,6 +1,6 @@
+from flask import Flask, request, jsonify
 import pandas as pd
 import numpy as np
-from data import StrokeData,HeartData
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
@@ -8,6 +8,14 @@ from sklearn.ensemble import RandomForestClassifier
 import joblib
 import pickle  
 
+
+class HeartData:
+    def __init__(self, age, sex, chest_pain_type, resting_bp, restecg, max_hr, exang, oldpeak, slope, thal):
+        self.features = [age, sex, chest_pain_type, resting_bp, restecg, max_hr, exang, oldpeak, slope, thal]
+
+class StrokeData:
+    def __init__(self, age, hypertension, heart_disease, ever_married, work_type, avg_glucose_level, bmi, smoking_status):
+        self.features = [age, hypertension, heart_disease, ever_married, work_type, avg_glucose_level, bmi, smoking_status]
 
 class HealthPredictor:
     def __init__(self):
@@ -80,3 +88,45 @@ class PersonData:
                                  self.features[13], self.features[14], self.features[15])
         return self.predictor.predict_stroke(stroke_data.features)
     
+app = Flask(__name__)
+
+@app.route('/', methods=['GET'])
+def home():
+    return "✅ Sahha Health Prediction API is Running", 200
+
+@app.route('/predict', methods=['POST'])
+def predict():
+    try:
+        data = request.get_json()
+
+        person_data = PersonData(
+            age=data['age'],
+            sex=data['sex'],
+            chest_pain_type=data['chest_pain_type'],
+            resting_bp=data['resting_bp'],
+            restecg=data['restecg'],
+            max_hr=data['max_hr'],
+            exang=data['exang'],
+            oldpeak=data['oldpeak'],
+            slope=data['slope'],
+            thal=data['thal'],
+            hypertension=data['hypertension'],
+            ever_married=data['ever_married'],
+            work_type=data['work_type'],
+            avg_glucose_level=data['avg_glucose_level'],
+            bmi=data['bmi'],
+            smoking_status=data['smoking_status']
+        )
+
+        return jsonify({
+            'heart_prediction': int(person_data.heart_prediction),
+            'stroke_prediction': int(person_data.stroke_prediction),
+            'stroke_probability': round(float(person_data.stroke_proba[person_data.stroke_prediction]), 4)           
+        })
+
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+# if __name__ == "__main__":
+#     app.run(host='0.0.0.0', port=8087, debug=True)
+
