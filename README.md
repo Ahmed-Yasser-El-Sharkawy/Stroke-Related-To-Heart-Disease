@@ -13,9 +13,13 @@
 
 * **Nested Structure**: First, a **heart disease prediction model** processes the user data. If risk is detected, the result is passed as an additional input to the **stroke prediction model**.
 * # Models Architecture
+* 
 ![image](https://github.com/user-attachments/assets/2c803ca3-72fe-40a9-9126-30890a3dacad)
+
 *# Models Architecture Video Demo
-https://github.com/user-attachments/assets/f21494ee-3b67-4439-826f-e1b240da4491
+
+[https://github.com/user-attachments/assets/f21494ee-3b67-4439-826f-e1b240da4491](https://github.com/user-attachments/assets/f21494ee-3b67-4439-826f-e1b240da4491)
+
 * **Goal**: Improve stroke prediction accuracy by incorporating cardiovascular conditions as an influencing factor.
 
 ### 📊 Datasets
