@@ -309,13 +309,13 @@ These considerations are critical when evaluating model outputs for clinical dec
 
 ## 👨‍💻 Contributors
 
-| Name (GitHub)                                                    | Role in this project          |
-| ---------------------------------------------------------------- | ----------------------------- |
-| [Ahmed Amr](https://github.com/Ahmedamr778)                      | **Mobile Developer**          |
-| [Ahmed Ali Abd-Elshafy](https://github.com/Ahmed209Ali)          | **Embedded Systems Engineer** |
-| [Ahmed El-Sharkawy](https://github.com/Ahmed-Yasser-El-Sharkawy) | **AI Team Lead**              |
-| [Ahmed Mohamed Youssef](https://github.com/AhmedGad231)          | **AI Developer**              |
-| [Ibrahim Ehab](https://github.com/ibrahimehab0222)               | **AI Developer**              |
+| Name (GitHub)                                                    | Role in this project                         |
+| ---------------------------------------------------------------- | -------------------------------------------- |
+| [Ahmed Amr](https://github.com/Ahmedamr778)                      | **Mobile Developer + AI Developer**          |
+| [Ahmed Ali Abd-Elshafy](https://github.com/Ahmed209Ali)          | **Embedded Systems Engineer + AI Developer** |
+| [Ahmed El-Sharkawy](https://github.com/Ahmed-Yasser-El-Sharkawy) | **AI Team Lead**                             |
+| [Ahmed Mohamed Youssef](https://github.com/AhmedGad231)          | **AI Developer**                             |
+| [Ibrahim Ehab](https://github.com/ibrahimehab0222)               | **AI Developer**                             |
 
  
 > 🔗 Visit each profile to explore more contributions and repositories!
