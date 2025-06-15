@@ -1,6 +1,6 @@
 # 🌍 Sahha: AI-Powered Stroke Risk Prediction and Monitoring System
 
-## 🚀 Project Overview
+## 🚀 Project Overview 
 
 **Sahha** is a multi-component intelligent health platform built to provide real-time cerebrovascular stroke and heart disease risk assessment. This project unites machine learning, embedded systems, computer vision, and cloud computing to offer a comprehensive healthcare solution for early diagnosis and personal monitoring.
 ![image](https://github.com/user-attachments/assets/f04f420c-a197-4571-a004-ab40156f1b58)
